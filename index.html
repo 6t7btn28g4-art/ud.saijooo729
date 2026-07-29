@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#12324a" name="theme-color"/>
+<meta content="西条酒蔵通りの7つの酒蔵、くぐり門、JR西条駅を分かりやすく案内するユニバーサルデザイン観光WEBアプリです。" name="description"/>
+<title>西条酒蔵通り｜観光案内ポータル</title>
+<link href="common.css" rel="stylesheet"/>
+<link href="pages.css" rel="stylesheet"/>
+<link href="assets/favicon-64.png" rel="icon" sizes="64x64" type="image/png"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<script defer="" src="site.js"></script>
+</head>
+<body class="portal-page" data-page="home">
+<a class="skip-to-main" href="#main">本文へ移動</a>
+<header class="site-header" id="siteHeader">
+<a aria-label="西条酒蔵通りポータル ホーム" class="site-brand" href="index.html">
+<img alt="" class="site-brand-logo" decoding="async" height="52" src="assets/saijo-logo.webp" width="52"/>
+<span><strong>西条酒蔵通り</strong></span>
+</a>
+<button aria-controls="siteNav" aria-expanded="false" class="site-menu-button" id="siteMenuButton" type="button"><span></span><span></span><span></span><b>メニュー</b></button>
+<nav aria-label="サイト内メニュー" class="site-nav" id="siteNav">
+<a data-site-page="home" href="index.html">ホーム</a>
+<a data-site-page="map" href="map.html">マップ・経路</a>
+<a data-site-page="guide" href="guide.html">酒蔵案内</a>
+<a data-site-page="products" href="products.html">商品紹介</a>
+<a data-site-page="nearby" href="nearby.html">周辺スポット</a>
+</nav>
+<a class="site-map-quick" href="map.html">経路を探す</a>
+</header>
+<section class="page-hero hero-home">
+<div class="page-hero-media"><img alt="青空の下に続く西条酒蔵通りの白壁の路地" decoding="async" fetchpriority="high" src="assets/home-main.webp"/></div>
+<div class="page-hero-content"><h1 class="page-title-only">西条酒蔵通り</h1></div>
+</section>
+<main class="page-main" id="main"><section aria-label="主要メニュー" class="home-quick-grid">
+<a class="home-quick-card map" href="map.html"><span>01</span><strong>マップ・経路</strong><small>現在地と青い徒歩ルート</small></a>
+<a class="home-quick-card" href="guide.html"><span>02</span><strong>酒蔵案内</strong><small>7つの酒蔵とくぐり門</small></a>
+<a class="home-quick-card" href="products.html"><span>03</span><strong>商品紹介</strong><small>酒蔵ごとの商品を見る</small></a>
+<a class="home-quick-card" href="nearby.html"><span>04</span><strong>周辺スポット</strong><small>案内・休憩・文化施設</small></a>
+</section>
+<section aria-labelledby="featuresTitle" class="section-block">
+<div class="section-head">
+<div><p class="section-kicker">SERVICE</p><h2 id="featuresTitle">観光に必要な情報を、ひとつに</h2></div>
+<p>マップ、酒蔵案内、商品紹介、周辺施設を別ページに整理し、スマートフォンでも迷わず操作できる構成にしています。</p>
+</div>
+<div class="feature-grid">
+<article class="feature-card"><div class="feature-card-icon">道</div><h3>徒歩ルート案内</h3><p>駅・7酒蔵・くぐり門のすべての組み合わせを青い道で案内。白い縁と矢印を併用し、色だけに頼りません。</p></article>
+<article class="feature-card"><div class="feature-card-icon">蔵</div><h3>酒蔵を比較</h3><p>番号、写真、位置、紹介文を一覧化。遠目では名称を、拡大時には写真を表示して地図の重なりを抑えます。</p></article>
+<article class="feature-card"><div class="feature-card-icon">UD</div><h3>使いやすさ設定</h3><p>文字サイズ、高コントラスト、平面地図、写真非表示、やさしい日本語などを利用者に合わせて選べます。</p></article>
+</div>
+</section>
+<section aria-labelledby="breweriesTitle" class="section-block">
+<div class="section-head">
+<div><p class="section-kicker">SEVEN BREWERIES</p><h2 id="breweriesTitle">7つの酒蔵</h2></div>
+<a class="card-link" href="guide.html">すべての酒蔵を見る</a>
+</div>
+<div class="brewery-grid">
+<article class="brewery-card"><div class="brewery-card-media"><img alt="山陽鶴酒造" loading="lazy" src="assets/sanyotsuru.webp"/></div><div class="brewery-card-body"><div class="card-title-row"><span class="card-number">1</span><h3>山陽鶴酒造</h3></div><p>西条駅の南西側に位置する酒蔵。マップでは西側の起点として分かりやすく表示します。</p><div class="card-actions"><a class="card-link route" href="map.html?place=sanyotsuru">地図で見る</a></div></div></article>
+<article class="brewery-card"><div class="brewery-card-media"><img alt="白牡丹酒造" loading="lazy" src="assets/hakubotan.webp"/></div><div class="brewery-card-body"><div class="card-title-row"><span class="card-number">2</span><h3>白牡丹酒造</h3></div><p>酒蔵通り南側の歴史ある酒蔵。駅や他の酒蔵から青い徒歩ルートを表示できます。</p><div class="card-actions"><a class="card-link route" href="map.html?place=hakubotan">地図で見る</a></div></div></article>
+<article class="brewery-card"><div class="brewery-card-media"><img alt="賀茂泉酒造" loading="lazy" src="assets/kamoizumi.webp"/></div><div class="brewery-card-body"><div class="card-title-row"><span class="card-number">7</span><h3>賀茂泉酒造</h3></div><p>酒蔵通り東側の目印。地図全体表示でも見切れないように表示範囲を調整しています。</p><div class="card-actions"><a class="card-link route" href="map.html?place=kamoizumi">地図で見る</a></div></div></article>
+</div>
+</section>
+<section aria-labelledby="routeCtaTitle" class="section-block route-cta">
+<div><h2 id="routeCtaTitle">西条駅から、最初の酒蔵へ</h2><p>出発地と目的地を選ぶだけで、白い道路の上に青い徒歩ルートを表示します。</p></div>
+<a class="primary-link" href="map.html?from=saijo-station&amp;to=kamotsuru">駅から賀茂鶴への道を見る</a>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer-grid">
+<section><div class="site-footer-brand"><img alt="" height="64" loading="lazy" src="assets/saijo-logo.webp" width="64"/><h2>西条酒蔵通り</h2></div><p>酒蔵めぐりを、より分かりやすく、より安心して楽しむための観光案内WEBアプリです。</p></section>
+<section><h3>ページ</h3><ul><li><a href="map.html">マップ・経路</a></li><li><a href="guide.html">酒蔵案内</a></li><li><a href="products.html">商品紹介</a></li><li><a href="nearby.html">周辺スポット</a></li></ul></section>
+<section><h3>ご利用にあたって</h3><p>酒蔵の営業・試飲・商品情報は変更される場合があります。来訪前に各施設の公式情報をご確認ください。</p></section>
+</div>
+<div class="site-footer-bottom">お酒は20歳になってから。飲酒運転は法律で禁止されています。</div>
+</footer>
+</body>
+</html>
